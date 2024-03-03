@@ -34,7 +34,7 @@ const EditBook = () => {
       publishYear,
     };
     setLoading(true);
-    axios.put(`http://localhost:5555/books/${id}`,data)
+    axios.put(`https://book-store-jade-delta.vercel.app/${id}`,data)
     .then(()=>{
       setLoading(false);
       enqueueSnackbar('Book Edited successfully',{variant:'success'})

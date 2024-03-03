@@ -10,7 +10,7 @@ const ShowBook = () => {
   const {id}=useParams();
   useEffect(()=>{
     setLoading(true);
-    axios.get(`http://localhost:5555/books/${id}`)
+    axios.get(`https://book-store-jade-delta.vercel.app/books/${id}`)
     .then((res)=>{
       setBooks(res.data);
       setLoading(false);

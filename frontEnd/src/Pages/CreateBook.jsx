@@ -18,7 +18,7 @@ const CreateBook = () => {
       publishYear,
     };
     setLoading(true);
-    axios.post('http://localhost:5555/books',data)
+    axios.post('https://book-store-jade-delta.vercel.app/books',data)
     .then(()=>{
       setLoading(false);
       enqueueSnackbar('Book Created successfully',{variant:'success'})
